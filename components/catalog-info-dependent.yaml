@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: todd-example-service-dependency
+  name: todd-newer-example-service-dependency
   description: |
     Todd 2nd Example service which has something to do with APIs and database.
   links:
@@ -21,12 +21,12 @@ metadata:
     - toddparson
 spec:
   type: service
-  owner: TeamB
+  owner: TeamA
   lifecycle: experimental
 #  system: Demo
   dependsOn:
-    - component:default/Todd-example-service
-  consumesApis:
-    - user-api
-  providesApis:
-    - example-api
+    - component:default/Todd-new-example-service
+#  consumesApis:
+#    - user-api
+#  providesApis:
+#    - example-api
